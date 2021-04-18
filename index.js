@@ -8,3 +8,14 @@ Array.prototype.chunk = function(size) {
      }
     return res
 }
+
+Array.prototype.concact = function () {
+  const result = []
+  for(let i = 0; i < this.length; i++) {
+    if(this[i]) {
+      result.push(this[i])
+    }
+    continue
+  }
+  return result
+}
